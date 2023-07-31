@@ -1,0 +1,120 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* http://glosmotec.com/glosmotec/tools/css/reset/
+   License: none (public domain)
+*/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body{
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.67),rgba(4, 9, 30, 0.467)),url(../img/background.jpeg);
+  background-size: cover;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  height: 4rem;
+  background: #421230;
+}
+
+.logo{
+  font-size: 2em;
+  color: #fff;
+  user-select: none;
+}
+
+.logo span, h1 span{
+  color: #9BF310;
+}
+
+.navigate a{
+  position: relative;
+  font-size: 1.1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.navigate a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+
+.navigate a:hover::after{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.center .btnLogin-popup{
+  width: 10rem;
+  height: 40px;
+  border: 1px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  transition: .5s;
+  background: #421230;
+}
+
+.center .btnLogin-popup:hover{
+  background: transparent;
+  border: 2px solid #9BF310;
+}
+
+/*************  MAIN  *****************/
+.center{
+  position: absolute;
+  left: 8%;
+  top: 40%;
+  /* background-color: red; */
+  color: #fff;
+}
+
+.main h1{
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+}
+.main h3{
+  font-size: 1.2rem;
+  padding-bottom: .4rem;
+}
+.main p{
+  padding-bottom: 2.8rem;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
