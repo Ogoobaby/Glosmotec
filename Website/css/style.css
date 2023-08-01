@@ -17,13 +17,6 @@
 /* LAYOUT
 /*******************************************/
 
-body{
-  align-items: center;
-  min-height: 100vh;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.67),rgba(4, 9, 30, 0.467)),url(../img/background.jpeg);
-  background-size: cover;
-}
-
 header{
   position: fixed;
   top: 0;
@@ -97,10 +90,16 @@ header{
 
 /*************  MAIN  *****************/
 .center{
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.67),rgba(4, 9, 30, 0.467)),url(../img/background.jpeg);
+  background-size: cover;
+}
+
+.main{
   position: absolute;
   left: 8%;
   top: 40%;
-  /* background-color: red; */
   color: #fff;
 }
 
@@ -115,6 +114,105 @@ header{
 .main p{
   padding-bottom: 2.8rem;
 }
+
+/*************  SECOND SECTION  *****************/
+
+.secoSect{
+  display: grid;
+  grid-template-columns: 40% auto;
+  align-items: center;
+  gap: 4rem;
+  margin: 5rem 10rem;
+  height: 70vh;
+}
+
+/* SECO - LEFT */
+
+.secoLeft h3{
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: .18rem;
+}
+
+.secoLeft button{
+  width: 80%;
+  margin-top: 2rem;
+  outline: none;
+  border: none;
+  /* padding: 2rem auto; */
+  height: 3rem;
+  text-transform: uppercase;
+  border-radius: 5rem;
+  cursor: pointer;
+  background: #9BF310;
+  font-size: .8rem;
+  font-weight: 600;
+  color: #421230;
+}
+
+/* SECO - RIGHT */
+.secoRight{
+  display: grid;
+  grid-template-columns: repeat(3, 10rem);
+  gap: 1rem;
+}
+
+.secoBox{
+  height: 7rem;
+  /* background: rgb(161, 155, 155); */
+  width: 7rem;
+  /* box-shadow: #000; */
+  padding: 5px;
+  border-radius: 1rem;
+  box-shadow: 0 1.2rem 3rem rgba(89, 101, 116, 0.386);
+  transition: all 300ms ease;
+}
+
+.secoBox .secoAuto{
+  text-align: right;
+  border-radius: 3rem;
+  background: #421230;
+  color: #fff;
+  margin-left: 40%;
+  padding: 2px;
+  font-size: x-small;
+  letter-spacing: .1rem;
+}
+
+.secoBox .secoIcon{
+  justify-content: center;
+  display: grid;
+  margin: 10px auto;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 1.5rem;
+  background: #9BF310;
+  box-shadow: 0 1.2rem 3rem rgba(89, 101, 116, 0.386);
+  align-items: center;
+}
+
+.secoBox h5{
+  padding: 10px auto 0;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
