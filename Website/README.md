@@ -1,7 +1,9 @@
-# My_Website_Glosmotec
+# GLOSMOTEC_WEBSITE
 
-Author
-<Name> Ogochukwu GloriaMary Nwanochiri
-<User_Name> Ogoobaby
-<Company_Name> Glosmotec
+## AUTHORS
+### First
+* Name - Ogochukwu GloriaMary Nwanochiri
+* UserName - Ogoobaby
 
+### Second
+* <Name> Chidiebere Macey Egbo
