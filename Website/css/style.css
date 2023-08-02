@@ -144,10 +144,10 @@ header{
   text-transform: uppercase;
   border-radius: 5rem;
   cursor: pointer;
-  background: #9BF310;
+  background: #f5f378;
   font-size: .8rem;
   font-weight: 600;
-  color: #421230;
+  color: #450202;
 }
 
 /* SECO - RIGHT */
@@ -171,7 +171,7 @@ header{
 .secoBox .secoAuto{
   text-align: right;
   border-radius: 3rem;
-  background: #421230;
+  background: #450202;
   color: #fff;
   margin-left: 40%;
   padding: 2px;
@@ -187,7 +187,7 @@ header{
   height: 40px;
   padding: 5px;
   border-radius: 1.5rem;
-  background: #9BF310;
+  background: #f5f378;
   box-shadow: 0 1.2rem 3rem rgba(89, 101, 116, 0.386);
   align-items: center;
 }
