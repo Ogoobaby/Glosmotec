@@ -89,6 +89,7 @@ header{
 }
 
 /*************  MAIN  *****************/
+
 .center{
   align-items: center;
   min-height: 100vh;
@@ -117,7 +118,7 @@ header{
 
 /*************  SECOND SECTION  *****************/
 
-.secoSect{
+.secoSect, .chooseSec{
   display: grid;
   grid-template-columns: 40% auto;
   align-items: center;
@@ -128,7 +129,7 @@ header{
 
 /* SECO - LEFT */
 
-.secoLeft h3{
+.secoLeft h3, .chooseText h3{
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: .18rem;
@@ -151,6 +152,7 @@ header{
 }
 
 /* SECO - RIGHT */
+
 .secoRight{
   display: grid;
   grid-template-columns: repeat(3, 10rem);
@@ -161,7 +163,6 @@ header{
   height: 7rem;
   /* background: rgb(161, 155, 155); */
   width: 7rem;
-  /* box-shadow: #000; */
   padding: 5px;
   border-radius: 1rem;
   box-shadow: 0 1.2rem 3rem rgba(89, 101, 116, 0.386);
@@ -197,9 +198,39 @@ header{
   text-align: center;
 }
 
+/************* CHOOSE SECTION  *****************/
 
+.chooseText h3{
+  color: #450202;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
 
+.chooseOffers{
+  display: grid;
+  grid-template-columns: repeat(2, 10rem);
+  gap: 1rem;
+  margin-top: 2rem;
+  color: #450202;
+}
 
+.cOffer{
+  display: grid;
+  grid-template-columns: 8% auto;
+  gap: .8rem;
+  align-items: center;
+}
+
+.cOffer span{
+  color: rgb(255, 123, 0);
+  font-size: 1.1rem;
+}
+
+.chooseRight img{
+  width: 100%;
+  border-radius: 5rem 0px;
+}
 
 
 
