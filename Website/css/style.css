@@ -28,7 +28,7 @@ header{
   align-items: center;
   z-index: 99;
   height: 4rem;
-  background: #421230;
+  background: #870404;
 }
 
 .logo{
@@ -38,7 +38,7 @@ header{
 }
 
 .logo span, h1 span{
-  color: #07b519;
+  color: #043001;
 }
 
 .navigate a{
