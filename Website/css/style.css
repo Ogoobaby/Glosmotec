@@ -200,7 +200,7 @@ header{
 
 /************* CHOOSE SECTION  *****************/
 
-.chooseText h3{
+.chooseText h3, .agentRight h3{
   color: #450202;
   font-size: 3rem;
   font-weight: 500;
@@ -232,8 +232,36 @@ header{
   border-radius: 5rem 0px;
 }
 
+/*************  AGENT SECTION  *****************/
 
+.agent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  padding: 5rem 8rem 5rem 0;
+}
 
+.agentLeft img{
+  width: 40rem;
+  border-radius: 100%;
+}
+
+.agentRight p{
+  margin-bottom: 3rem;
+}
+
+.agentRight button{
+  width: 9rem;
+  height: 3rem;
+  background: #450202;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  gap: 7px;
+}
 
 
 
