@@ -118,13 +118,35 @@ header{
 
 /*************  SECOND SECTION  *****************/
 
+.services{
+  margin: 7rem 0;
+}
+
+.centerText{
+  text-align: center;
+}
+
+.centerText.big{
+  color: #450202;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.centerText.small{
+  margin: 2rem 20rem;
+}
+
 .secoSect, .chooseSec{
   display: grid;
   grid-template-columns: 40% auto;
   align-items: center;
   gap: 4rem;
-  margin: 5rem 10rem;
-  height: 70vh;
+  margin: 10rem;
+}
+
+.chooseSec{
+  padding-top: 4rem;
 }
 
 /* SECO - LEFT */
