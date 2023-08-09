@@ -285,7 +285,54 @@ header{
   gap: 7px;
 }
 
+/* OTHER SERVICES */
 
+.otherServ{
+  margin-top: 4rem;
+}
+
+.servFlex{
+  display: grid;
+  grid-template-columns: 40% auto;
+  align-items: center;
+  gap: 4rem;
+  margin: 5rem 7rem;
+}
+
+.servLeft h3{
+  color: #450202;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.otherServ h3.centerText{
+  font-size: 2rem;
+  color: black;
+  text-transform: uppercase;
+}
+
+.otherServ h3 span{
+  color: #1a3ac7;
+}
+
+.servLeft button{
+  width: 10rem;
+  background: #450202;
+  height: 3rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+.servRight img{
+  width: 40rem;
+  height: 30rem;
+}
 
 
 
