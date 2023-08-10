@@ -12,6 +12,13 @@
   margin: 0;
   padding: 0;
 }
+/* rgba(4, 9, 30, 0.67) */
+:root{
+  --main-color: #2b9170;
+  --second-color: #B69EFE;
+  --text-color: #04091eea;
+  --span-color: #5FD89E;
+}
 
 /******************************************
 /* LAYOUT
@@ -27,8 +34,8 @@ header{
   justify-content: space-between;
   align-items: center;
   z-index: 99;
-  height: 4rem;
-  background: #450202;
+  height: 5rem;
+  background: rgba(4, 9, 30, 0.918);
 }
 
 .logo{
@@ -38,7 +45,7 @@ header{
 }
 
 .logo span, h1 span{
-  color: #f5f378;
+  color: #5FD89E;
 }
 
 .navigate a{
@@ -80,12 +87,12 @@ header{
   color: #fff;
   font-weight: 500;
   transition: .5s;
-  background: #450202;
+  background: var(--main-color);
 }
 
 .center .btnLogin-popup:hover{
   background: transparent;
-  border: 2px solid #f5f378;
+  border: 2px solid var(--second-color);
 }
 
 /*************  MAIN  *****************/
@@ -127,7 +134,7 @@ header{
 }
 
 .centerText.big{
-  color: #450202;
+  color: var(--text-color);
   font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -151,7 +158,7 @@ header{
 
 /* SECO - LEFT */
 
-.secoLeft h3, .chooseText h3{
+.secoLeft h3{
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: .18rem;
@@ -162,15 +169,14 @@ header{
   margin-top: 2rem;
   outline: none;
   border: none;
-  /* padding: 2rem auto; */
   height: 3rem;
   text-transform: uppercase;
   border-radius: 5rem;
   cursor: pointer;
-  background: #f5f378;
+  background: var(--second-color);
   font-size: .8rem;
   font-weight: 600;
-  color: #450202;
+  color: var(--text-color);
 }
 
 /* SECO - RIGHT */
@@ -183,7 +189,6 @@ header{
 
 .secoBox{
   height: 7rem;
-  /* background: rgb(161, 155, 155); */
   width: 7rem;
   padding: 5px;
   border-radius: 1rem;
@@ -194,8 +199,8 @@ header{
 .secoBox .secoAuto{
   text-align: right;
   border-radius: 3rem;
-  background: #450202;
-  color: #fff;
+  background: var(--span-color);
+  color: black;
   margin-left: 40%;
   padding: 2px;
   font-size: x-small;
@@ -210,7 +215,6 @@ header{
   height: 40px;
   padding: 5px;
   border-radius: 1.5rem;
-  background: #f5f378;
   box-shadow: 0 1.2rem 3rem rgba(89, 101, 116, 0.386);
   align-items: center;
 }
@@ -223,9 +227,9 @@ header{
 /************* CHOOSE SECTION  *****************/
 
 .chooseText h3, .agentRight h3{
-  color: #450202;
-  font-size: 3rem;
-  font-weight: 500;
+  color: var(--text-color);
+  font-size: 2.5rem;
+  font-weight: 600;
   margin-bottom: 1rem;
 }
 
@@ -234,7 +238,7 @@ header{
   grid-template-columns: repeat(2, 10rem);
   gap: 1rem;
   margin-top: 2rem;
-  color: #450202;
+  color: var(--text-color);
 }
 
 .cOffer{
@@ -245,13 +249,14 @@ header{
 }
 
 .cOffer span{
-  color: rgb(255, 123, 0);
+  color: var(--span-color);
   font-size: 1.1rem;
 }
 
 .chooseRight img{
   width: 100%;
-  border-radius: 5rem 0px;
+  height: 50vh;
+  border-radius: 20rem 20rem 10px 10px;
 }
 
 /*************  AGENT SECTION  *****************/
@@ -276,16 +281,22 @@ header{
 .agentRight button{
   width: 9rem;
   height: 3rem;
-  background: #450202;
-  color: white;
+  background: var(--span-color);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
   gap: 7px;
+  overflow: hidden;
+  border: none;
 }
 
 /* OTHER SERVICES */
+
+.servBox{
+  background: #81b2e211;
+  padding: 5rem 7rem;
+}
 
 .otherServ{
   margin-top: 4rem;
@@ -296,11 +307,15 @@ header{
   grid-template-columns: 40% auto;
   align-items: center;
   gap: 4rem;
-  margin: 5rem 7rem;
+  padding: 5rem 2px;
+}
+
+.servFlex.two{
+  grid-template-columns: auto 40%;
 }
 
 .servLeft h3{
-  color: #450202;
+  color: var(--text-color);
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -313,25 +328,27 @@ header{
 }
 
 .otherServ h3 span{
-  color: #1a3ac7;
+  color: var(--main-color);
 }
 
 .servLeft button{
   width: 10rem;
-  background: #450202;
+  background: var(--span-color);
   height: 3rem;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
   margin-top: 3rem;
   cursor: pointer;
+  border: none;
 }
 
 .servRight img{
   width: 40rem;
-  height: 30rem;
+  height: 20rem;
+  border-radius: 10px;
+  border: 5px solid #0a3f74f5;
 }
 
 
