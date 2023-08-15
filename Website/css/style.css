@@ -12,10 +12,10 @@
   margin: 0;
   padding: 0;
 }
-/* rgba(4, 9, 30, 0.67) */
+/* rgba(4, 9, 30, 0.67), #B69EFE */
 :root{
   --main-color: #2b9170;
-  --second-color: #B69EFE;
+  --second-color: rgb(252, 253, 170);
   --text-color: #04091eea;
   --span-color: #5FD89E;
 }
@@ -76,6 +76,11 @@ header{
   transform-origin: left;
 }
 
+.headerBtn{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 .center .btnLogin-popup{
   width: 10rem;
   height: 40px;
@@ -92,7 +97,7 @@ header{
 
 .center .btnLogin-popup:hover{
   background: transparent;
-  border: 2px solid var(--second-color);
+  border: 2px solid white;
 }
 
 /*************  MAIN  *****************/
@@ -173,10 +178,10 @@ header{
   text-transform: uppercase;
   border-radius: 5rem;
   cursor: pointer;
-  background: var(--second-color);
+  background: var(--text-color);
   font-size: .8rem;
   font-weight: 600;
-  color: var(--text-color);
+  color: white;
 }
 
 /* SECO - RIGHT */
@@ -279,7 +284,7 @@ header{
 }
 
 .agentRight button{
-  width: 9rem;
+  width: 12rem;
   height: 3rem;
   background: var(--span-color);
   display: flex;
@@ -289,6 +294,7 @@ header{
   gap: 7px;
   overflow: hidden;
   border: none;
+  transition: .5s;
 }
 
 /* OTHER SERVICES */
@@ -332,7 +338,7 @@ header{
 }
 
 .servLeft button{
-  width: 10rem;
+  width: 12rem;
   background: var(--span-color);
   height: 3rem;
   display: flex;
@@ -340,8 +346,14 @@ header{
   align-items: center;
   border-radius: 5px;
   margin-top: 3rem;
-  cursor: pointer;
   border: none;
+  transition: .5s;
+}
+
+.servLeft button:hover, .agentRight button:hover{
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid #0a3f74f5;
 }
 
 .servRight img{
@@ -351,8 +363,52 @@ header{
   border: 5px solid #0a3f74f5;
 }
 
+/*************  TESTIMONIALS  *****************/
 
+.testimonials{
+  padding-top: 5rem;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
 
+.testCol{
+  padding: 2.5rem 2rem;
+  flex-basis: 49%;
+  font-size: .85rem;
+  border-radius: 10px;
+  margin: 2% 0;
+  text-align: left;
+  background: #81b2e211;
+  cursor: pointer;
+  display: flex;
+  border: 2px solid #0a3f74f5;
+}
+
+.testCol section p{
+  line-height: 1.3rem;
+  margin-bottom: .7rem;
+  color: #04091eea;
+}
+
+.testimonials .testRow{
+  margin: 8%;
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  flex-flow: wrap;
+}
+
+.testCol img{
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+#dot{
+  margin: auto;
+}
 
 
 
