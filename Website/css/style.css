@@ -410,6 +410,66 @@ header{
   margin: auto;
 }
 
+/*************  FOOTER  *****************/
+
+.footer{
+  background: #04091eea;
+  padding: 3rem 4rem;
+  color: white;
+}
+
+.footFlex{
+  display: grid;
+  grid-template-columns: auto 30% 30%;
+  gap: 1rem;
+}
+
+.footflex1 h5{
+  margin-bottom: 1.4rem;
+}
+
+.footflex1 h5 span{
+  color: var(--span-color);
+}
+
+.footflex1 a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-top: .8rem;
+  font-size: .8rem;
+}
+.footflex1 a:hover{
+  color: #5FD89E;
+}
+
+.footflex1 p{
+  font-size: .8rem;
+}
+/**************** SECOND FOOTER PART *****************/
+
+.footFlex.sec{
+  margin-top: 2rem;
+  color: #5FD89E;
+  font-size: .8rem;
+}
+
+.footFlex.sec span{
+  color: white;
+  font-weight: 600;
+}
+
+.end{
+  text-align: center;
+  margin-top: 4rem;
+}
+
+
+
+
+
+
+
 
 
 
